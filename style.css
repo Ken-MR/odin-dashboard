@@ -181,7 +181,34 @@ button {
     padding: 10px;
     border-left: 15px solid gold;
     border-radius: 10px;
+
+    display: grid;
+    grid-template-rows: 50px 100px 100px;
     
+}
+
+.card > h3 {
+    position: relative;
+    left: 10px;
+    top: 20px;
+    grid-row: 1;
+}
+
+.card > p {
+    position: relative;
+    left: 10px;
+    grid-row: 2;
+    width: 75%;
+}
+
+.card > div {
+    position: relative;
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 20px;
 }
 
 .announce-header {
