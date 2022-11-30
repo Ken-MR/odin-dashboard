@@ -15,7 +15,7 @@
     left: 0;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
     padding: 0;
     margin: 0;
 }
@@ -229,6 +229,8 @@ button {
 
 }
 
+
+
 .trending-header {
     grid-column: 2;
     grid-row: 3;
@@ -244,9 +246,20 @@ button {
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
-
 }
 
-.trending-card > ul {
-    margin-left: 10px;
+.trending-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.trending-card > ul > li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
 }
