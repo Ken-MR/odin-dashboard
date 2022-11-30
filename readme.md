@@ -1,0 +1,1 @@
+This project demonstrates basic usage of CSS grid and related HTML/CSS principles to create a simple information dashboard.
