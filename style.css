@@ -15,6 +15,14 @@
     left: 0;
 }
 
+p, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
 .sidebar {
     background-color: rgb(90, 168, 240);
     grid-column: 1;
@@ -44,22 +52,52 @@
     list-style: none;
 }
 
-.header {
-    background-color: rgb(252, 252, 252);
-    grid-row: 1;
-    grid-column: 2;
-}
-
-.main-content {
-    background-color: rgb(216, 216, 216);
-    grid-column: 2;
-    grid-row: 2;
-}
-
-h1 {
+.sidebar > h1 {
     margin: 0;
     padding: 0;
     position: relative;
     top: 1em;
     left: 1em
+}
+
+
+
+.header {
+    background-color: rgb(252, 252, 252);
+    grid-row: 1;
+    grid-column: 2;
+    
+    /* create nested header grid */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 100px;
+    gap: 20px;
+}
+
+.searchbar {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.name {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.username {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.post {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+.main-content {
+    background-color: rgb(216, 216, 216);
+    grid-column: 2;
+    grid-row: 2;
 }
