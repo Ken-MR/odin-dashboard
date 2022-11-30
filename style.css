@@ -168,10 +168,10 @@ button {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 30px;
     padding: 20px;
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 2 / -1;
     color: black;
     
 }
