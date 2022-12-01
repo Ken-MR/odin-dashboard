@@ -152,7 +152,7 @@ button {
     grid-row: 2;
 
     display: grid;
-    grid-template-rows: 50px 1.5fr 50px 1fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
     grid-template-columns: 3fr 1fr;
 }
 
@@ -229,6 +229,18 @@ button {
 
 }
 
+.announce-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-evenly;
+}
+
+.announce-list > li {
+    padding-left: 10px;
+}
+
 
 
 .trending-header {
@@ -256,7 +268,7 @@ button {
     justify-content: space-evenly;
 }
 
-.trending-card > ul > li {
+.trending-list > li {
     display: flex;
     gap: 20px;
     align-items: center;
