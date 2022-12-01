@@ -241,6 +241,10 @@ button {
     padding-left: 10px;
 }
 
+.announce > p {
+    font-size: 12px;
+}
+
 
 
 .trending-header {
