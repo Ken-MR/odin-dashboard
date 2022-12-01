@@ -1,10 +1,15 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.woff);
+}
+
 .container {
     /* set up basic page layout */
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 175px 5fr;
 
-    font: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
 
     /*  make dashboard take up entire screen */
