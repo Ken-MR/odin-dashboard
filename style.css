@@ -35,22 +35,36 @@ p, h1, h2, h3, h4 {
 
     /* create nested sidebar grid */
     display: grid;
-    grid-template-rows: 100px 250px 150px;
-    gap: 20px;
+    grid-template-rows: 50px 250px 150px;
+    gap: 50px;
 }
 
-.sidebar-header {
+.side-bar-header {
     grid-row: 1;
+    padding-left: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.side-bar-header > .material-icons {
+    display: inline;
+}
+
+.side-bar-header > h1 {
+    display: inline;
+    position: relative;
+    bottom: 10px;
+    padding-left: 10px;
 }
 
 .nav1 {
     grid-row: 2;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .nav2 {
     grid-row: 3;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 ul {
@@ -66,12 +80,14 @@ li {
     margin: 0px;
 }
 
-.sidebar > h1 {
-    margin: 0;
-    padding: 0;
+.sidebar-text {
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+li > .material-icons {
     position: relative;
-    top: 1em;
-    left: 1em
+    top: 5px;
 }
 
 
@@ -103,6 +119,7 @@ input[type="search"] {
     height: 30px;
     border-radius: 10px;
     background-color: rgb(117, 113, 113);
+    margin-left: 16px;
 }
 
 input[type="search"]:focus {
@@ -114,7 +131,7 @@ input[type="search"]:focus {
     grid-row: 1;
 
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
 }
@@ -212,7 +229,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 20px;
     padding-right: 20px;
 }
 
